@@ -35,7 +35,7 @@ def is_dicom(file: str) -> bool:
             # force will always parse, so now check to see if we have a valid DICOM structure
             # SOP Instance UID (0008, 0018) is a mandatory tag, if not the file is not useable as DICOM
             isDicom = (0x0008, 0x0018) in dataset
-        except Exception as e:
+        except Exception:
             print("File - {file} - is not a valid dicom file. Marking this as a bad file.")
     #Checking if it is not a DICOMDIR file
     isDicomDir = True
