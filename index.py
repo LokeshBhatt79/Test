@@ -47,7 +47,7 @@ def is_dicom(file: str) -> bool:
     print(f"isDicom--{isDicom}")
     return isDicom and not(isDicomDir)
 
-def is_dicom1(file: str) -> bool:
+def is_dicom(file: str) -> bool:
     isDicom1 = False
     try:
         print(f'inside is_dicom {file}')
